@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-01-28 00:17:17.523555",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_pfdm",
+  "employee",
+  "employee_name",
+  "month",
+  "column_break_ootv",
+  "year",
+  "holidays",
+  "total_days",
+  "column_break_jbnj",
+  "overtime_hours",
+  "working_days",
+  "present_days",
+  "leaves",
+  "column_break_inzk",
+  "absent_days",
+  "late_coming_minutes",
+  "late_coming_hours",
+  "section_break_attendance_details",
+  "attendance_details_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "label": "Month",
+   "options": "Month"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Year"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "label": "Total Days",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "holidays",
+   "fieldtype": "Int",
+   "label": "Holidays",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "working_days",
+   "fieldtype": "Int",
+   "label": "Working Days",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "present_days",
+   "fieldtype": "Int",
+   "label": "Present Days",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "leaves",
+   "fieldtype": "Int",
+   "label": "Leaves",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "absent_days",
+   "fieldtype": "Float",
+   "label": "Absent Days",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "late_coming_hours",
+   "fieldtype": "Float",
+   "label": "Late Coming Hours",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "label": "Overtime Hours",
+   "precision": "9",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.docstatus==1",
+   "fieldname": "section_break_attendance_details",
+   "fieldtype": "Section Break",
+   "label": "Daily Attendance Details"
+  },
+  {
+   "depends_on": "eval:doc.docstatus==1",
+   "fieldname": "attendance_details_table",
+   "fieldtype": "Table",
+   "label": "Attendance Details",
+   "options": "Attendance Daily Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Monthly Attendance Summary",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_pfdm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jbnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "ATT-.YY.-.MM.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ATT-.YY.-.MM.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ootv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_inzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "late_coming_minutes",
+   "fieldtype": "Float",
+   "label": "Late Coming Minutes",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-14 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Plus",
+ "name": "Monthly Attendance Summary",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

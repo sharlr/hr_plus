@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:status",
+ "creation": "2026-01-28 17:16:26.052860",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "start_from",
+  "status",
+  "column_break_xtdt",
+  "to",
+  "column_break_sgvg",
+  "tax_component",
+  "section_break_rgwt",
+  "tax_setup"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_from",
+   "fieldtype": "Link",
+   "label": "Start From",
+   "options": "Year",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_sgvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "label": "To",
+   "options": "Year"
+  },
+  {
+   "fieldname": "section_break_rgwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tax_setup",
+   "fieldtype": "Table",
+   "label": "Tax Setup",
+   "options": "Tax Setup"
+  },
+  {
+   "fieldname": "column_break_xtdt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "unique": 1
+  },
+  {
+   "fieldname": "tax_component",
+   "fieldtype": "Link",
+   "label": "Tax Component ",
+   "options": "Salary Component"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-29 16:52:23.586772",
+ "modified_by": "Administrator",
+ "module": "HR Plus",
+ "name": "Tax Slab",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

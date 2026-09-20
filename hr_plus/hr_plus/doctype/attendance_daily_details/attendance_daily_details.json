@@ -1,0 +1,83 @@
+{
+ "creation": "2026-01-28 00:35:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "day",
+  "status",
+  "checkin_time",
+  "checkout_time",
+  "late_hours",
+  "overtime_hours",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Present\nAbsent\nHoliday\nLeave",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checkin_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Check-in Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checkout_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Check-out Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "late_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Late Hours",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overtime Hours",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2026-01-28 00:35:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Plus",
+ "name": "Attendance Daily Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic"
+}

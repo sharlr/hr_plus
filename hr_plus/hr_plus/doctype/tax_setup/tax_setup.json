@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-28 17:19:16.889263",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lower_limit",
+  "column_break_mfir",
+  "upper_limit",
+  "column_break_npcm",
+  "tax_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "lower_limit",
+   "fieldtype": "Currency",
+   "label": "Lower Limit"
+  },
+  {
+   "fieldname": "upper_limit",
+   "fieldtype": "Currency",
+   "label": "Upper Limit"
+  },
+  {
+   "fieldname": "column_break_mfir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_npcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-28 17:20:55.507999",
+ "modified_by": "Administrator",
+ "module": "HR Plus",
+ "name": "Tax Setup",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
